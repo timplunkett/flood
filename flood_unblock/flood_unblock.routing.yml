@@ -1,0 +1,15 @@
+flood_unblock.description:
+  path: '/flood-unblock/description'
+  defaults:
+    _controller: '\Drupal\flood_unblock\Controller\FloodUnblockController::description'
+    _title: 'Flood Unblock Description'
+  requirements:
+    _permission: 'access content'
+
+flood_unblock.configuration:
+  path: '/flood-unblock/config'
+  defaults:
+    _controller: '\Drupal\flood_unblock\Controller\FloodUnblockController::configuration'
+    _title: 'Flood Unblock Configuration'
+  requirements:
+    _permission: 'access content'
