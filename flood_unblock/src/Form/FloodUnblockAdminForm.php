@@ -27,19 +27,40 @@ class FloodUnblockAdminForm extends FormBase {
   /**
    * {@inheritdoc}
    */
+  // protected function getEditableConfigNames() {
+  //   return [
+  //     'flood_unblock.form'
+  //   ];
+  // }
+
+  /**
+   * {@inheritdoc}
+   */
   public function buildForm(array $form, FormStateInterface $form_state) {
+    $form['email'] = array(
+      '#type' => 'email',
+      '#title' => $this->t('Your .com email address.')
+    );
+    $form['show'] = array(
+      '#type' => 'submit',
+      '#value' => $this->t('Submit'),
+    );
+
+    return $form;
   }
 
   /**
    * {@inheritdoc}
    */
   public function validateForm(array &$form, FormStateInterface $form_state) {
+    parent::validateForm($form, $form_state);
   }
 
   /**
    * {@inheritdoc}
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
+    parent::submitForm($form, $form_state);
   }
 
 }

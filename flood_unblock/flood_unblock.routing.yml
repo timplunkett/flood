@@ -14,11 +14,11 @@ flood_unblock.configuration:
   requirements:
     _permission: 'access content'
 
-flood_unblock.configuration:
-  path: '/flood-unblock/admin'
+flood_unblock.form:
+  path: '/admin/flood-unblock/'
   defaults:
     _form: '\Drupal\flood_unblock\Form\FloodUnblockAdminForm'
     _title: 'Flood Unblock Users'
   requirements:
-    _permission: 'access flood unblock'
+    _permission: 'access content'
 
